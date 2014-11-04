@@ -109,6 +109,23 @@ class C_Lightbox_Installer
             )
         );
 
+        // Install Fancybox 2.1.5 with buttons and thumbs helpers
+	// TODO add media helper, jquery mousewheel, see jquery version, add thumb and other options
+        $this->install_lightbox(
+            'fancybox2',
+            'Fancybox 2',
+            'class="ngg-fancybox2" rel="%GALLERY_NAME%"',
+            array('photocrati-lightbox#fancybox2/jquery.fancybox-2.1.5.css',
+                  'photocrati-lightbox#fancybox2/helpers/jquery.fancybox-buttons.css',
+                  'photocrati-lightbox#fancybox2/helpers/jquery.fancybox-thumbs.css'
+            ),
+            array('photocrati-lightbox#fancybox2/jquery.fancybox-2.1.5.pack.js',
+                  'photocrati-lightbox#fancybox2/helpers/jquery.fancybox-buttons.js',
+                  'photocrati-lightbox#fancybox2/helpers/jquery.fancybox-thumbs.js',
+                  'photocrati-lightbox#fancybox2/nextgen_fancybox2_init.js'
+            )
+        );
+
         // Install highslide
         $this->install_lightbox(
             'highslide',
